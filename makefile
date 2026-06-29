@@ -1,14 +1,14 @@
 # Target to build the executable
-merge_sort: maman_12.c
-# gcc -g -Wall -pedantic -ansi maman_12.c -o maman_12 -lm
-	gcc -g -Wall -pedantic -std=gnu99 maman_12.c -o maman_12 -lm
+algs_cmp: algs_cmp.c
+# gcc -g -Wall -pedantic -ansi algs_cmp.c -o algs_cmp -lm
+	gcc -g -Wall -pedantic -std=gnu99 algs_cmp.c -o algs_cmp -lm
 # Clean rule to remove previous files
 clean:
-	rm -f maman_12 maman_12.o 
+	rm -f algs_cmp algs_cmp.o 
 
 # Add a default rule to clean before building
 .PHONY: all clean
-all: clean maman_12
+all: clean algs_cmp
 
 # - To clean manually, run:  
 #   ```bash
